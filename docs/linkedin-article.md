@@ -1,5 +1,7 @@
 # I Built Unfog Because “Write a Better Spec” Is Usually the Wrong Advice
 
+Published on LinkedIn: [Read the article](https://www.linkedin.com/pulse/i-built-unfog-because-write-better-spec-usually-wrong-justin-fowler-awysc/)
+
 Most of my best instructions to an AI coding agent are objectively terrible specs.
 
 “Build it.”
@@ -32,7 +34,7 @@ That changes the collaboration model. The human can speak in compressed intent. 
 
 It also changes what “done” means. A passing test, green deployment, or HTTP 200 is not automatically a completion receipt. Unfog requires evidence from the layer the user actually experiences, a non-zero denominator, and a receipt for every acceptance probe.
 
-The skill works with **Codex, Cursor, and Claude**, using the same `SKILL.md` package and shared installer. It supports automatic invocation for vague, non-trivial work, or explicit use with `$unfog`.
+The skill works with **Codex, Cursor, and Claude**, using the same Agent Skills package and shared installer. It supports automatic invocation for vague, non-trivial work, or explicit use with `$unfog`.
 
 For long-running or risky work, the repository includes a deterministic JSON contract validator. It rejects unresolved material forks, zero-item checks, missing user-observable probes, missing controls, and completion claims without receipts.
 

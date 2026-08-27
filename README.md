@@ -4,6 +4,8 @@
 
 Unfog is an Agent Skill for people who communicate in compressed directions—“build it,” “fix this,” “make it useful”—and expect an agent to recover the real target, preserve what matters, execute the full chain, and prove the result.
 
+Read why it exists: [I Built Unfog Because “Write a Better Spec” Is Usually the Wrong Advice](https://www.linkedin.com/pulse/i-built-unfog-because-write-better-spec-usually-wrong-justin-fowler-awysc/)
+
 It does not inflate every request into a formal specification. It silently compiles non-trivial, underspecified work into a small execution contract:
 
 - the outcome someone will actually observe;
