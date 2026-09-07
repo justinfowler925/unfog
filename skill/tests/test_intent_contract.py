@@ -73,6 +73,12 @@ class ContractValidationTests(unittest.TestCase):
     def test_valid_complete_contract_passes(self) -> None:
         self.assertEqual([], contract_module.validate(fixture("valid-complete.json"), "complete"))
 
+    def test_skill_requires_canon_join_and_honest_time_windows(self) -> None:
+        text = (SKILL_ROOT / "SKILL.md").read_text(encoding="utf-8")
+        self.assertIn("brutus workflow route", text)
+        self.assertIn("Continue the returned active Work Item", text)
+        self.assertIn("time-window outcome proof", text)
+
 
 class InstallTests(unittest.TestCase):
     def test_installer_links_all_surfaces_to_one_source(self) -> None:

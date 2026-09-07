@@ -17,6 +17,8 @@ It does not inflate every request into a formal specification. It silently compi
 
 Unfog asks a question only when a genuinely material fork remains. Otherwise, it uses evidence, chooses the least-expanding reversible interpretation, and keeps moving.
 
+When Brutus/Canon is available, every invocation first routes or resumes the exact intent there, then posts bounded progress and delivery receipts back to the same Work Item. Fowler Brain remains the durable home for reusable rules and measured learnings; it is not duplicated into a second live task queue.
+
 ## Install
 
 ```sh

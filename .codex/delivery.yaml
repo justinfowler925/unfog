@@ -1,0 +1,19 @@
+schema_version: 1
+repository: github.com/justinfowler925/unfog
+requirements:
+  - id: tests
+    kind: test
+    command: python3 -m unittest discover -s skill/tests -v
+    freshness_hours: 8
+  - id: installer_check
+    kind: test
+    command: python3 skill/scripts/install.py --check
+    freshness_hours: 8
+  - id: git
+    kind: git
+    probe: origin/main contains the delivered commit and the checkout is clean
+    freshness_hours: 8
+  - id: linked_surfaces
+    kind: readback
+    probe: Codex, Cursor, Claude, and shared Agent Skills resolve to the same released skill digest
+    freshness_hours: 8
