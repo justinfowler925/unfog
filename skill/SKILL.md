@@ -53,6 +53,7 @@ If a material fork remains, finish every safe read-only preflight first. Ask wit
 - Implement the smallest change that satisfies the outcome and covers the measured population.
 - When evidence refutes the premise, do not build the requested mechanism. Report the measured state and solve the underlying outcome if it remains authorized.
 - If implementation reveals a new material fork, update the contract and apply the question gate again. Do not silently change the outcome or scope.
+- For ingestion-backed surfaces, trace one real source through parsing, persistence, selection, and the rendered result. Inspect representative folder/index structure; a successful connection is not ingestion proof. Keep authorization durable when parsing fails. Distinguish ingested source material from the editorial subset shown to the user.
 - Turn a user correction about product behavior into an executable regression test or fixture in the target project when one can observe that behavior. Do not promote a one-off correction into a universal rule.
 
 ## Close the loop
